@@ -5,6 +5,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  Outlet,
 } from "react-router-dom";
 import ResumePage from "./components/ResumePage/ResumePage"
 
@@ -24,10 +25,18 @@ function Home() {
 function App() {
   return (
     <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/resume" element={<ResumePage />}/>
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/resume" element={<ResumePage />} />
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>Invalid route</p>
+            </main>
+          }
+        />
+      </Routes>
     </BrowserRouter>
   );
 }
