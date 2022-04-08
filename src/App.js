@@ -5,7 +5,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Outlet,
+  BrowserRouter,
 } from "react-router-dom";
 import ResumePage from "./components/ResumePage/ResumePage"
 
@@ -26,8 +26,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/resume" element={<ResumePage />} />
+        <Route path="/" element={<Home />} />
         <Route
           path="*"
           element={
