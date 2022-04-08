@@ -4,7 +4,8 @@ import resume from "../../assets/NestorMartinez-Resume.pdf"
 
 export default function ResumePage() {
   return (
-    <iframe src={resume} title="description"/>
+    // <iframe src={resume} title="description"/>
+    <p>yo</p>
   );
 }
 
