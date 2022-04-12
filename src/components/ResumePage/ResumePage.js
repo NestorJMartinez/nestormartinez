@@ -1,6 +1,6 @@
 import React from "react";
 import "./ResumePage.css"
-import resume from "../../assets/NestorMartinez-Resume.pdf"
+import resume from "../../assets/NestorMartinezResume.pdf"
 
 export default function ResumePage() {
   return (
